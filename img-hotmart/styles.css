@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+
+/* Estilos para el enlace del logo */
+
+header a {
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+}
+
+
+/* Estilos para la imagen del logo */
+
+header img {
+    max-width: 200px;
+    /* Ancho máximo de la imagen del logo */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+    display: block;
+    /* Evita que otros elementos floten junto a la imagen */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente en el encabezado */
+}
+
+
+/* Estilos para el texto alternativo del logo (opcional) */
+
+header img::alt {
+    color: #fff;
+    /* Color del texto alternativo */
+    font-size: 18px;
+    /* Tamaño de fuente del texto alternativo */
+    text-align: center;
+    /* Centra el texto alternativo horizontalmente */
+    margin-top: 10px;
+    /* Espacio superior para separar la imagen del texto */
+}
+
+main {
+    max-width: 800px;
+    /* Ancho máximo del contenido */
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    padding: 20px;
+    /* Espacio interno alrededor del contenido */
+}
+
+
+/* Estilos para el párrafo */
+
+.parrafo1 {
+    font-size: 40px;
+    /* Tamaño de fuente del párrafo */
+    line-height: 1.3;
+    /* Espacio entre líneas */
+    text-align: center;
+}
+
+
+/* Estilos para el video */
+
+.video {
+    width: 100%;
+    height: 100vh;
+    /* Video ocupa todo el ancho disponible */
+    /* Altura fija del video (puede ajustarse) */
+}
+
+
+/* Estilos para hacer el contenido responsive en dispositivos móviles */
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+        /* Reducir el espacio interno en dispositivos pequeños */
+    }
+    .video {
+        height: 250px;
+        /* Ajustar la altura del video en dispositivos móviles */
+    }
+}
+
+
+/* Estilos para el contenido principal */
+
+
+/* Estilos para la sección principal */
+
+.info {
+    max-width: 100%;
+    /* Ancho máximo del contenido */
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    padding: 20px;
+    /* Espacio interno alrededor del contenido */
+    display: flex;
+    /* Dos columnas de tamaño igual */
+    gap: 20px;
+    /* Espacio entre las columnas */
+}
+
+
+/* Estilos para la imagen en la primera columna */
+
+.image-container {
+    text-align: center;
+    /* Centrar la imagen horizontalmente */
+}
+
+.image-container img {
+    max-width: 100%;
+    /* La imagen se ajustará al ancho de su contenedor */
+    height: auto;
+}
+
+
+/* Estilos para la segunda columna */
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Estilos para el título */
+
+.column2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para la descripción */
+
+.column2 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos para el botón de compra */
+
+.column2 button {
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.column2 button:hover {
+    background-color: #a6cbf3;
+    transition: 0.3s;
+}
+
+
+/* Estilos para hacer el contenido responsive en dispositivos móviles */
+
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        /* Una sola columna en dispositivos móviles */
+    }
+    .column2 {
+        text-align: center;
+        /* Centrar el contenido en dispositivos móviles */
+    }
+}
+
+
+/* Estilos para la galería */
+
+.tittle2 {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas de igual ancho */
+    gap: 10px;
+    /* Espacio entre las imágenes */
+}
+
+
+/* Estilos para las imágenes */
+
+.gallery img {
+    max-width: 300px;
+    /* Las imágenes se ajustarán al ancho de su contenedor */
+    height: auto;
+    transition: transform 0.3s ease;
+    /* Transición suave en el efecto de escala */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    /* Escala las imágenes al 110% del tamaño original */
+}
+
+
+/* Estilos para hacer la galería responsive en dispositivos móviles */
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas en dispositivos móviles */
+    }
+}
+
+@media (max-width: 650px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        /* Dos columnas en dispositivos móviles */
+    }
+}
+
+
+/* Estilos para los títulos */
+
+.menu {
+    margin: 20px;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+.menu h3 {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    /*    justify-content: space-between;*/
+    align-items: center;
+}
+
+.arrow {
+    transition: transform 1s ease;
+    margin-left: 5px;
+}
+
+.arrow:hover {
+    color: #007bff;
+    transition: 0.5s;
+}
+
+
+/* Estilos para el contenido oculto */
+
+.content {
+    display: none;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Estilos para la primera columna (logo de la empresa) */
+
+.logo {
+    flex: 1;
+    text-align: left;
+}
+
+.logo img {
+    max-width: 100px;
+    /* Tamaño máximo del logo */
+    height: auto;
+}
+
+
+/* Estilos para la segunda columna (pestaña de legales) */
+
+.legales {
+    flex: 1;
+    text-align: center;
+}
+
+.legales a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    /* Espacio entre las pestañas de legales */
+}
+
+
+/* Estilos para la tercera columna (botones de redes sociales) */
+
+.redes-sociales {
+    flex: 1;
+    text-align: right;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    /* Espacio entre los botones de redes sociales */
+}
+
+.sticky {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    /* Se mantendrá en la parte superior de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos para el contador */
+
+.contador {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* Estilos para el ícono de reloj */
+
+.reloj {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+
+/* Estilos para la leyenda */
+
+.leyenda {
+    font-size: 16px;
+}
+
+
+/* Estilos para el botón de WhatsApp */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    /* Color de WhatsApp */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 999;
+    /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+}
+
+
+/* Estilos para el ícono de WhatsApp (puedes reemplazar con tu propio ícono) */
+
+.whatsapp-icon {
+    font-size: 24px;
+}
