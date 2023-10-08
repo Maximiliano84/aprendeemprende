@@ -116,15 +116,15 @@ video {
 .img-cover {
     font-size: 15px;
     background: linear-gradient(90deg, rgba(190, 196, 195, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(190, 196, 195, 1) 100%);
-    padding: 15px;
+    padding: 0 20px 0 20px;
     color: #000000;
     border-radius: 30px;
     box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.78);
 }
 
 .img-cover p {
-    font-size: 16px;
-    padding: 2px;
+    font-size: 18px;
+    padding: 1px;
     color: #000000;
 }
 
@@ -142,7 +142,7 @@ video {
     padding: 10px;
     background: var(--bgverde);
     border-radius: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     box-shadow: 8px 6px 8px 0px rgba(0, 0, 0, 0.78);
 }
 
@@ -169,7 +169,7 @@ video {
 /* Estilos para el contenido de las consignas */
 
 .info2 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -267,6 +267,11 @@ video {
     margin: 15px;
 }
 
+.content_title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .menu0,
 .menu1 {
     width: 100%;
@@ -288,6 +293,10 @@ video {
     margin-left: 20px;
 }
 
+.answer {
+    font-size: 18px;
+}
+
 .menu-title {
     text-align: center;
     margin-bottom: 20px;
@@ -299,7 +308,7 @@ video {
 }
 
 li {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 3px;
     list-style-type: none;
 }
@@ -337,17 +346,11 @@ li:before {
     -moz-box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 1);
 }
 
-.content {
-    display: none;
-    margin-top: 5px;
-    margin-left: 20px;
-}
-
 .menu h3 {
     cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px;
 }
 
@@ -371,7 +374,6 @@ li:before {
 
 .content li {
     margin-left: 20px;
-    font-weight: 100;
 }
 
 
